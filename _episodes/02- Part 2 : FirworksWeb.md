@@ -159,7 +159,7 @@ make them go \"main\" view.
 >> ## Solution
 >> You should see this:
 >> ![fireworksweb_9]({%link fig/fireworksweb_9.png%}){: width="70%"}
-> {:. solution}
+> {: .solution}
 {: .challenge}
 
 > ## Question 5
@@ -234,29 +234,13 @@ discriminator method,
 `i.bDiscriminator(\"pfCombinedInclusiveSecondaryVertexV2BJetTags\")`. A
 \"medium\" b-tagging working point requires that the discriminator value
 is larger than 0.8. Alternatively, add a new Jet collection (\"Add
-Collection\") with a bDiscriminator filter applied. **NOTE: Please do
-not forget the escape character \"\\\"**.
+Collection\") with a bDiscriminator filter applied.
 
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-b discriminator addition\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise8show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-b discriminator addition\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise8hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
+ **NOTE: Please do not forget the escape character \"\\\"**.
 
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise8toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-```
-:::
-:::
+> ## Show/Hide
+> ![fireworksweb_10]({%link fig/fireworksweb_10.png%}){: width="70%"}
+{: .solution}
 
 Hint 2 (MC only): use the
 [[PrunedGenParticles](https://twiki.cern.ch/twiki/bin/edit/CMS/PrunedGenParticles?topicparent=CMS.SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise;nowysiwyg=0 "this topic does not yet exist; you can create it."){rel="nofollow"}]{.twikiNewLink}
