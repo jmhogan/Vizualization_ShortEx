@@ -48,7 +48,7 @@ and accesses files stored on the CERN [EOS](https://twiki.cern.ch/twiki/bin/view
 [http://fireworks.ucsd.edu/](http://fireworks.ucsd.edu/){: target="_blank"}.
 You may be required to login through CERN SSO. You should see a webpage
 like the following:
-![fireworksweb_1.png]({% link fig/fireworksweb_1.png%}){: width="70%"}
+![fireworksweb_1.png](../fig/fireworksweb_1.png){: width="70%"}
 
 2. Open a file. Let's say we are working on an analysis and we are working with a ttbar nanoaod data set:
 
@@ -83,18 +83,18 @@ From here we pick one file (e.g. first one)
 
 Then we put the path into the text box and click `Load File XCache_UCSD`
 
-![fireworksweb_2.png]({%link fig/fireworksweb_2.png%}){: width="70%"}
+![fireworksweb_2.png](../fig/fireworksweb_2.png){: width="70%"}
 
 Then the webpage will start printing out some status information and
 after some time later once the file is loaded, the webpage will display
 something like the following:
 
-![fireworksweb_3.png]({%link fig/fireworksweb_3.png%}){: width="70%"}
+![fireworksweb_3.png](../fig/fireworksweb_3.png){: width="70%"}
 
 The webpage might redirect you straight to the event display, or you can
 follow the link and you will see the fireworks open:
 
-![fireworksweb_4.png]({%link fig/fireworksweb_4.png%}){: width="70%"}
+![fireworksweb_4.png](../fig/fireworksweb_4.png){: width="70%"}
 
 ## Exploration 1: EW Physics
 
@@ -104,7 +104,7 @@ Open
 Once the path is provided click the
 `Load File EOS` button. Once it opens you should something like the following:
 
-![fireworksweb_5.png]({%link fig/fireworksweb_5.png%}){: width="70%"}
+![fireworksweb_5.png](../fig/fireworksweb_5.png){: width="70%"}
 
 Before starting to play around, we can move to a more interesting event.
 You can scan through the events by clicking the event navigation buttons
@@ -115,7 +115,7 @@ lumi/event number to go to the new event.
 Skip to the third event in the file, run/lumi/event is
 1/416042/83208204.
 
-![fireworksweb_6.png]({%link fig/fireworksweb_6.png%}){: width="70%"}
+![fireworksweb_6.png](../fig/fireworksweb_6.png){: width="70%"}
 
 Try to click the interesting objects in the 3D view window and answer
 the below question:
@@ -137,7 +137,7 @@ make them go \"main\" view.
 >> ## Solution
 >> In this configuration, the muon collection is filtered with expression "pt()>5 & isLooseMuon()",
 >> meaning that each muon is only displayed if its pT is larger than 5 !GeV, and it passes the Loose ID requirements.
->> ![fireworksweb_7]({%link fig/fireworksweb_7.png%}){: width="70%"}
+>> ![fireworksweb_7](../fig/fireworksweb_7.png){: width="70%"}
 > {: .solution}
 {: .challenge}
 
@@ -147,7 +147,7 @@ make them go \"main\" view.
 > display only muons with pT lower than 5 GeV (revert the change afterwards)
 >> ## Solution
 >> You should see this:
->> ![fireworksweb_8]({%link fig/fireworksweb_8.png%}){: width="70%"}
+>> ![fireworksweb_8](../fig/fireworksweb_8.png){: width="70%"}
 >{: .solution}
 {: .challenge}
 
@@ -158,7 +158,7 @@ make them go \"main\" view.
 > and click \"Add\". Why does the 5.9 GeV muon stand out? Could you have seen this by zooming in on the Rho-Z View?
 >> ## Solution
 >> You should see this:
->> ![fireworksweb_9]({%link fig/fireworksweb_9.png%}){: width="70%"}
+>> ![fireworksweb_9](../fig/fireworksweb_9.png){: width="70%"}
 > {: .solution}
 {: .challenge}
 
@@ -239,89 +239,45 @@ Collection\") with a bDiscriminator filter applied.
  **NOTE: Please do not forget the escape character \"\\\"**.
 
 > ## Show/Hide
-> ![fireworksweb_10]({%link fig/fireworksweb_10.png%}){: width="70%"}
+> ![fireworksweb_10](../fig/fireworksweb_10.png){: width="70%"}
 {: .solution}
 
-Hint 2 (MC only): use the
-[[PrunedGenParticles](https://twiki.cern.ch/twiki/bin/edit/CMS/PrunedGenParticles?topicparent=CMS.SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise;nowysiwyg=0 "this topic does not yet exist; you can create it."){rel="nofollow"}]{.twikiNewLink}
-collection to make sense of the event: filter the collection with
-\"!isHardProcess\" to get the relevant particles (rather than the
-default filter).
+**Hint 2 (MC only)**: use the PrunedGenParticles collection to make sense of the event: filter the collection with \"!isHardProcess\" to get the relevant particles (rather than the default filter).
 
 First, go to the first event, 36/24518.
 
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 9 - What is this event? Can you find
-the combination of jets from Ws and from tops? ]{style="color: #ff0000"}
+> ## Question 9
+>  What is this event? Can you find the combination of jets from Ws and from tops?
+> > ## Show/Hide
+> >This is a particularly difficult ttbar event, with one W decaying to leptons (muon+neutrino), and other to hadrons.
+>>
+>> The transverse mass (mT) of the muon+MET is 98 GeV, very high for a W, presumably due to MET resolution.
+>> To make things worse, one of the quarks from the hadronic W is very low pT and does not form a jet.
+> {: .solution}
+{: .challenge}
 
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise9show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise9hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise9toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-This is a particularly difficult ttbar event, with one W decaying to leptons (muon+neutrino), and other to hadrons.
-The transverse mass (mT) of the muon+MET is 98 GeV, very high for a W, presumably due to MET resolution.
-To make things worse, one of the quarks from the hadronic W is very low pT and does not form a jet.
-
-```
-:::
-:::
 
 Next, let\'s see event 2744/1876862
+> ## Question 10
+>  What are the objects in the event? Are the muons close to jets?
+> > ## Show Answer
+> > This is a nice dilepton (e+mu) ttbar event. There are three muons, but two of them are close to jets. Looking at the
+>>truth record, we confirm that those two jets are coming from the b quarks. The truth record says that there are following two b-quarks:
+>>
+>>```
+>>pt = 87.4 !GeV, eta = -0.49, phi = 2.39,
+>>pt = 52.6 !GeV, eta = 1.96, phi = 1.71
+>>
+>>While the two jets are
+>>pt = 66.5 !GeV, eta = -0.721, phi = 2.287
+>>pt = 38.4 !GeV, eta = 2.012, phi = 1.622
+>>```
+>>The eta / phi directions show good agreement indicating that these indeed are the b-jets.
+>> ![fireworksweb_11](../fig/fireworksweb_11.png){: width="70%"}
+>{: .solution}
+{: .challenge}
 
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 10 - What are the objects in the
-event? Are the muons close to jets? ]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise10show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise10hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise10toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-This is a nice dilepton (e+mu) ttbar event. There are three muons, but two of them are close to jets. Looking at the
-truth record, we confirm that those two jets are coming from the b quarks.
-
-The truth record says that there are following two b-quarks:
-pt = 87.4 !GeV, eta = -0.49, phi = 2.39,
-pt = 52.6 !GeV, eta = 1.96, phi = 1.71
-
-While the two jets are
-pt = 66.5 !GeV, eta = -0.721, phi = 2.287
-pt = 38.4 !GeV, eta = 2.012, phi = 1.622
-
-The eta / phi directions show good agreement indicating that these indeed are the b-jets.
-
-```
-:::
-:::
-
-## []{#Exploration_3_Higgs_Physics} Exploration 3: Higgs Physics
+## Exploration 3: Higgs Physics
 
 Now let us scan the Higgs file
 `/store/group/upgrade/visualization/ggh4l.root`
