@@ -195,11 +195,12 @@ make them go \"main\" view.
 >>
 >> mT(met, muon, jet) = 95.2 !GeV
 >> mT(met, muon, track) = 86.4 !GeV
->>
->> The event is likely a Z->tautau, with one tau decaying leptonically (muon + MET) and another in a one-prong hadronic tau decay. The one prong tau track is clustered in a jet with pT = 39.6 !GeV. When looking at the PrunedGenParticles list, one will find that there are pdgId 15 and -15 particle (grayed out) listed confirming that the event is indeed Z->tautau. The track pT is closest to the origina pion (pdgId=211) pT of 31.8 !GeV and also the eta.
 >>```
+>> The event is likely a Z->tautau, with one tau decaying leptonically (muon + MET) and another in a one-prong hadronic tau decay. The one prong tau track is clustered in a jet with pT = 39.6 !GeV. When looking at the PrunedGenParticles list, one will find that there are pdgId 15 and -15 particle (grayed out) listed confirming that the event is indeed Z->tautau. The track pT is closest to the origina pion (pdgId=211) pT of 31.8 !GeV and also the eta.
+>> ![fireworksweb_10](../fig/fireworksweb_10.png){: width="70%"}
 > {: .solution}
 {: .challenge}
+
 
 Now let us use event filter by clicking the event filter button called
 `FilterDialog`. Search for events with large MET (i.e. \>60
@@ -208,13 +209,16 @@ Once the filter runs the `FilterStatus:` will report the number of events passin
 >##  Question 8
 >  How many events are selected? Can you guess what is the cause?
 >> ## Show Answer
->>```
+>>
 >>In total, six events are selected.
->>All are Z-->TauTau events except events 83208351, 8365, 8506.
+>>All are `Z-->TauTau` events except events 83208351, 8365, 8506.
 >>Event 83208351 is a Z(ee)+jets event, the electrons are reconstructed properly (the invariant mass matches the Z). There is a below-threshold jet (pT=24.2 GeV) in the direction opposite to the MET, which could be mis-measured or coming from pile-up.
+>>
 >>Event 83208365 is a Z(mm)+jets event with one muon out of acceptance (pt = 45 GeV, eta = 2.4). The lost muon explains most of the MET, while the rest can be ascribed to jet mis-measurement.
+>>
 >>Event 83208506 is a Z(mm)+jets event with both muons out of acceptance and two very forward jets. Lost muons and mis-measured jets lead to the MET.
->>```
+>>
+>> ![fireworksweb_14](../fig/fireworksweb_14.png){: width="70%"}
 > {: .solution}
 {: .challenge}
 
@@ -239,7 +243,7 @@ Collection\") with a bDiscriminator filter applied.
  **NOTE: Please do not forget the escape character \"\\\"**.
 
 > ## Show/Hide
-> ![fireworksweb_10](../fig/fireworksweb_10.png){: width="70%"}
+> ![fireworksweb_11](../fig/fireworksweb_11.png){: width="70%"}
 {: .solution}
 
 **Hint 2 (MC only)**: use the PrunedGenParticles collection to make sense of the event: filter the collection with \"!isHardProcess\" to get the relevant particles (rather than the default filter).
@@ -253,6 +257,7 @@ First, go to the first event, 36/24518.
 >>
 >> The transverse mass (mT) of the muon+MET is 98 GeV, very high for a W, presumably due to MET resolution.
 >> To make things worse, one of the quarks from the hadronic W is very low pT and does not form a jet.
+>> ![fireworksweb_12](../fig/fireworksweb_12.png){: width="70%"}
 > {: .solution}
 {: .challenge}
 
@@ -273,7 +278,7 @@ Next, let\'s see event 2744/1876862
 >>pt = 38.4 !GeV, eta = 2.012, phi = 1.622
 >>```
 >>The eta / phi directions show good agreement indicating that these indeed are the b-jets.
->> ![fireworksweb_11](../fig/fireworksweb_11.png){: width="70%"}
+>> ![fireworksweb_13](../fig/fireworksweb_13.png){: width="70%"}
 >{: .solution}
 {: .challenge}
 
@@ -284,35 +289,16 @@ Now let us scan the Higgs file
 
 First go to event 1278/254045.
 
-[ Question 11 - How many leptons in this event? What is this event? Can
-you calculate the invariant mass of the higgs? Are both Zs on-shell and
-if not which is the off-shell one? ]{style="color: #ff0000"}
+> ## Question 11
+>  How many leptons in this event? What is this event? Can you calculate the invariant mass of the higgs? Are both Zs on-shell and
+> if not which is the off-shell one?
+> > ## Show/Hide
+> > This event is `H->ZZ->2e2mu`. Invariant mass of the Higgs is 125.9 GeV, the off-shell Z is the one from the muon pair with mass 27.6 GeV (electrons make >> an invariant mass of 92.4 GeV)
+> {: .solution}
+{: .challenge}
 
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise11show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise11hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
 
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise11toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-This event is H->ZZ->2e2mu. Invariant mass of the Higgs is 125.9 GeV, the
-off-shell Z is the one from the muon pair with mass 27.6 GeV (electrons make an
-invariant mass of 92.4 GeV).
-```
-:::
-:::
-
-------------------------------------------------------------------------
+------------------------------------------------------------
 
 Go to event 1278/254054.
 
@@ -323,97 +309,36 @@ will use what is available. Add a column with
 `(i.caloIso()+i.trackIso())/i.pt()`. Once you do that you\'ll see
 something like this:
 
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result of adding charge and isolation\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise12show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result of adding charge and isolation\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise12hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise12toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-```
-:::
-:::
+Result of adding charge and isolation
+![fireworksweb_15](../fig/fireworksweb_15.png){: width="70%"}
 
 Also for isolation
 `(i.userIsolation(\"PfChargedHadronIso\")+i.userIsolation(\"PfNeutralHadronIso\")+i.userIsolation(\"PfGammaIso\"))/i.pt()`
 can be used as well.
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 12 - What is this event? Can you pair
-the muons and get the invariant mass of the two Zs? Are all 4 muons
-isolated (Isolation\<0.2)? ]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[[Show answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise13show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[[Hide answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise13hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise13toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-It is H->ZZ->4mu. Invariant mass of the Higgs is 126.9 GeV. From the
-table you can see the charge of the muons and try the combinations with
-opposite charges. Turns out that muons 0 and 2 are from an on-shell Z with mass
-92.1 GeV, muons 1 and 4 from an off-shell Z with mass 27.0 GeV. All of the
-muons are isolated.
-```
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 12
+>  What is this event? Can you pair the muons and get the invariant mass of the two Zs? Are all 4 muons isolated (Isolation\<0.2)?
+> > ## Show/Hide
+> > It is `H->ZZ->4mu`. Invariant mass of the Higgs is 126.9 GeV. From the table you can see the charge of the muons and try the combinations with
+> > opposite charges. Turns out that muons 0 and 2 are from an on-shell Z with mass 92.1 GeV, muons 1 and 4 from an off-shell Z with mass 27.0 GeV. All of the muons are isolated.
+> {: .solution}
+{: .challenge}
+-----------------------------------------------------
 
 Go to event 1278/254110.
+> ## Question 14
+>  What is this event? Are the electrons isolated? Can you pair electrons in the correct way? Why is
+> the 4th electron not drawn?
+>
+> Hint: Isolation can be accessed via
+> `(i.userIsolation(\"PfChargedHadronIso\")+i.userIsolation(\"PfNeutralHadronIso\")+i.userIsolation(\"PfGammaIso\"))/i.pt()`
+>
+>> ## Show Answer
+>> It is H->ZZ->4e. Invariant mass of the Higgs is 121 GeV. All electrons are fairly isolated, i.e. below 20%, except 1. From the electron table you can see the
+>> charge of the electrons and try the combinations with opposite charges. Based on the truth information the first and third electrons are the correct pair, and the 2nd and 4th, each with 23.5 !GeV and 61.9 !GeV respectively.
+> {: .solution}
+{: .challenge}
 
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 14 - What is this event? Are the
-electrons isolated? Can you pair electrons in the correct way? Why is
-the 4th electron not drawn? ]{style="color: #ff0000"}
-
-Hint: Isolation can be accessed via
-`(i.userIsolation(\"PfChargedHadronIso\")+i.userIsolation(\"PfNeutralHadronIso\")+i.userIsolation(\"PfGammaIso\"))/i.pt()`
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[[Show answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise14show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[[Hide answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise14hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise14toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-It is H->ZZ->4e. Invariant mass of the Higgs is 121 GeV. All electrons
-are fairly isolated, i.e. below 20%, except 1. From the electron table you can see the
-charge of the electrons and try the combinations with opposite charges. Based on the truth information the first and third electrons are the correct pair, and the 2nd and 4th, each with 23.5 !GeV and 61.9 !GeV respectively.
-```
-:::
-:::
-
-## []{#Exploration_4_13_TeV_collision_e} Exploration 4: 13TeV collision events
+## Exploration 4: 13TeV collision events
 
 In this section, we will look at collision events at 13TeV. These events
 are selected from SingleElectron and SingleMuon datasets. The events
@@ -423,97 +348,39 @@ There are a few relevant files. Open the single electron data file,
 `/eos/uscms/store/user/cmsdas/2020/short_exercises/Visualization/data_SingleElectron.root`
 
 Go to event 274200:48:72793234
+> ## Question 15
+> What kind of event is this? How can you justify your answer?
+>
+>> ## Show/Hide
+>> This is a probably a Z->ee event, as can be understood from the invariant mass of the two electrons (90.647 GeV).
+>> ![fireworksweb_16](../fig/fireworksweb_16.png){: width="70%"}
+>{: .solution}
+{: .challenge}
 
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 15 - What kind of event is this? How
-can you justify your answer? ]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise15show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise15hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise15toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-This is a probably a Z->ee event, as can be understood from the invariant mass of the two electrons (90.647 GeV).
-```
-:::
-:::
-
-------------------------------------------------------------------------
+---
 
 Go to event 274200:48:71915470
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ [ Question 16 - What kind of event is this? How
-can you justify your answer?
-]{style="color: #ff0000"}]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise16show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise16hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise16toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-The invariant mass of the two electrons (84.667 GeV) and that of the two jets (104.962 GeV).
-This could even be a ZZ->2e2q event, although this process is extremely rare with respect to the more frequent Z+2jets.
-```
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 16
+>  What kind of event is this? How can you justify your answer?
+>> ## Show Answer
+>> The invariant mass of the two electrons (84.667 GeV) and that of the two jets (104.962 GeV).
+>> This could even be a ZZ->2e2q event, although this process is extremely rare with respect to the more frequent Z+2jets.
+>> ![fireworksweb_17](../fig/fireworksweb_17.png){: width="70%"}
+> {: .solution}
+{: .challenge}
+---------------
 
 Go to event 274200:48:72636084
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 17 - What kind of event is this? How
-can you justify your answer? ]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[[Show answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise17show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[[Hide answer\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise17hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise17toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-This is probably a Z+jet event, as can be understood from the invariant mass of the two isolated electrons (90.312 GeV).
-Hint: Isolation can be accessed via =(i.userIsolation(\"PfChargedHadronIso\")+i.userIsolation(\"PfNeutralHadronIso\")+i.userIsolation(\"PfGammaIso\"))/i.pt()=
-The 2nd electron with very high isolation value is likely part of a quark or gluon (i.e. ISR).
-```
-:::
-:::
+> ## Question 17
+>  What kind of event is this? How can you justify your answer?
+>> ## Show Answer
+>> This is probably a Z+jet event, as can be understood from the invariant mass of the two isolated electrons (90.312 GeV).
+>>
+>> Hint: Isolation can be accessed via `(i.userIsolation(\"PfChargedHadronIso\")+i.userIsolation(\"PfNeutralHadronIso\")+i.userIsolation(\"PfGammaIso\"))/i.pt()`
+>> The 2nd electron with very high isolation value is likely part of a quark or gluon (i.e. ISR).
+>> ![fireworksweb_18](../fig/fireworksweb_18.png){: width="70%"}
+> {: .solution}
+{: .challenge}
 
 Often we find events that are not trivial to interpret, and usually
 there are at least a couple of processes which could have generated the
@@ -525,25 +392,20 @@ any electrons in the event with pt\>30GeV? If so, check their isolation.
 Are there any muons in the event with pt\>30GeV? If so, check their
 isolation. Is this a single lepton event? If so, what is the lepton? Can
 you identify any likely top candidates?
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 18/19 - Look at some interesting
-events in this dataset and try to interpret them: 1023/1523919869,
-1023/1523757530. ]{style="color: #ff0000"}
+> ## Question 18/19
+> Look at some interesting events in this dataset and try to interpret them: 1023/1523919869, 1023/1523757530.
+{: .challenge}
 
 You can also explore the single muon data file
 `/eos/uscms/store/user/cmsdas/2020/short_exercises/Visualization/data_SingleMuon.root`
 
-You can go through the events and characterize each based on the objects
-you find.
+You can go through the events and characterize each based on the objects you find.
 
-If you have time at the end (after the next section), explore the events
-stored in
-`/eos/uscms/store/user/cmsdas/2020/short_exercises/Visualization/SinglePhoton*.root`,
-and see if you can find anything interesting.
+If you have time at the end (after the next section), explore the events stored in
 
-## []{#Exploration_5_Scanning_noisy_eve} Exploration 5: Scanning noisy events
+`/eos/uscms/store/user/cmsdas/2020/short_exercises/Visualization/SinglePhoton*.root`, and see if you can find anything interesting.
+
+## Exploration 5: Scanning noisy events
 
 In this section, we will have a look at a few events one does not want
 to end up with after having applied an analysis selection. These events
@@ -577,88 +439,31 @@ Let\'s now have a look at some of those events:
 Go to event 274316:385:698231955 of
 `/store/group/upgrade/visualization/BadEvents_Run2016B1.root`
 
-[ Question 22 - What is this event? ]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Hint\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise18show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-hint\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise18hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise18toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-Take a look at the CSC-segments. Due to white background, the CSC view is a bit hard to catch. Change the color to see it a little better.
-If one hovers the mouse one can see click on them to highlight to make it more visible. Also, Ctrl- click will allow user to click multiple at a time.
-```
-:::
-:::
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise19show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise19hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise19toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-Beam halo  On the Rho-Z view, you observe a series of CSC hits forming a
-straight line. You can also notice that the HCAL deposit actually consists of
-several HCAL towers. If you now go to the 3D view, you can see that the HCAL
-towers lie on the same phi coordinate as the CSC hits. To get even more
-convinced of the phi correspondence of the calorimeter hits, you can also use
-the Lego view and zoom on to the area of interest.
-```
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 22
+> What is this event?
+>
+> **Hint**
+>
+> Take a look at the CSC-segments. Due to white background, the CSC view is a bit hard to catch. Change the color to see it a little better.
+> If one hovers the mouse one can see click on them to highlight to make it more visible. Also, Ctrl- click will allow user to click multiple at a time.
+>> ## Show/Hide
+>>  Beam halo  On the Rho-Z view, you observe a series of CSC hits forming a straight line. You can also notice that the HCAL deposit actually consists of several HCAL towers. If you now go to the 3D view, you can see that the HCAL
+>> towers lie on the same phi coordinate as the CSC hits. To get even more convinced of the phi correspondence of the calorimeter hits, you can also use the Lego view and zoom on to the area of interest.
+>> ![image19](../fig/fireworksweb_19.png){: width="70%"}
+> {: .solution}
+{: .challenge}
+---
 
 Go to event 275074:259:417685155 of
 `/store/group/upgrade/visualization/BadEvents_Run2016B2.root`
 
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 23 - What is this event?
-]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise20show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise20hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise20toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-Beam halo  This is again a beam halo event. In this case, you actually have CSC hits on both sides of the detector (forward and backward).
-```
-:::
-:::
+> ## Question 23
+>  What is this event?
+>> ## Show Answer
+>> Beam halo -- This is again a beam halo event. In this case, you actually have CSC hits on both sides of the detector (forward and backward).
+>> ![20](../fig/fireworksweb_20.png){: width="70%"}
+> {: .solution}
+{: .challenge}
 
 ------------------------------------------------------------------------
 
