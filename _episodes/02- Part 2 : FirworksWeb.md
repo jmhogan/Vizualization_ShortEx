@@ -469,174 +469,68 @@ Go to event 275074:259:417685155 of
 
 Go to event 276244:428:658649950 of
 `/store/group/upgrade/visualization/BadEvents_Run2016C1.root`
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 24 - What is this event?
-]{style="color: #ff0000"}
-
-Hint: The DT-Segments are not available in FireworksWeb for now. (Will
-be supported in the future.) So this one will be more easier with Legacy
-Fireworks. However, try adding collections (Click Add Collections -\>
-Search \"cosmic\" -\> Select \"Muons\", \"muonsFromCosmics\" -\>
-[[AddCollection](https://twiki.cern.ch/twiki/bin/edit/CMS/AddCollection?topicparent=CMS.SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise;nowysiwyg=0 "this topic does not yet exist; you can create it."){rel="nofollow"}]{.twikiNewLink}).
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise21show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise21hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise21toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-Cosmics  Looking at the Rho-Phi view, you see that some of the DT hits are
-forming a straight line. This can also be seen from the Rho-Z view. Going to
-the 3D view and playing a bit with the point of view, you can observe that the
-DT line coincides with the ECAL deposits. This is a muon hitting ECAL
-electronics to create a fake high energy ECAL deposit with no track: a photon
-(as can be seen from the photon collection).
-!FireworksWeb with cosmic muon collection:
-
-Legacy Fireworks screenshot:
-```
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 24
+>  What is this event?
+> Hint: The DT-Segments are not available in FireworksWeb for now. (Will be supported in the future.) So this one will be more easier with Legacy
+> Fireworks. However, try adding collections (Click Add Collections -\> Search \"cosmic\" -\> Select \"Muons\", \"muonsFromCosmics\" -\>
+> AddCollection
+>> ## Show/Hide
+>> Cosmics --  Looking at the Rho-Phi view, you see that some of the DT hits are forming a straight line. This can also be seen from the Rho-Z view. Going
+>>to the 3D view and playing a bit with the point of view, you can observe that the DT line coincides with the ECAL deposits. This is a muon hitting ECAL
+>> electronics to create a fake high energy ECAL deposit with no track: a photon
+>> (as can be seen from the photon collection).
+>>
+>>!FireworksWeb with cosmic muon collection:
+>>
+>> ![22](../fig/fireworksweb_22.png){: width="70%"}
+>>Legacy Fireworks screenshot:
+>> ![21](../fig/fireworksweb_21.png){: width="70%"}
+> {: .solution}
+{: .challenge}
+-----------------------
 
 Go to event 276437:1940:3426602195 of
 `/store/group/upgrade/visualization/BadEvents_Run2016D1.root`
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 25 - What is this event?
-]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise22show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise22hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise22toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-``` command
-Cosmics  The justification is the same as for the previous event. The straight
-DT line is quite obvious here. Notice that Fireworks tries to draw tracks
-coming from the center: it always assumes particles come from the center of the
-detector.
-```
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 25
+>  What is this event?
+>> ## Show/Hide
+>> Cosmics -- The justification is the same as for the previous event. The straight
+>> DT line is quite obvious here. Notice that Fireworks tries to draw tracks
+>> coming from the center: it always assumes particles come from the center of the detector.
+>> ![23](../fig/fireworksweb_23.png){: width="70%"}
+>{: .solution}
+{: .challenge}
+-----------
 
 Go to event 276544:83:153985051 of
 `/store/group/upgrade/visualization/BadEvents_Run2016D2.root`
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 26 - What is this event?
-]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise23show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise23hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise23toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-Beam halo -- Another halo event.
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 26
+>  What is this event?
+>> ## Show/Hide
+>> Beam halo -- Another halo event.
+>{: .solution}
+{: .challenge}
+------
 
 Go to event 276585:73:117748568 of
 `/store/group/upgrade/visualization/BadEvents_Run2016D3.root`
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 27 - What is this event?
-]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise24show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise24hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise24toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-Cosmics -- Another cosmics event.
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 27
+>  What is this event?
+>> ## Show/Hide
+>> Cosmics -- Another cosmics event.
+>{: .solution}
+{: .challenge}
+----
 
 Go to event 276811:2460:3888980376 of
 `/store/group/upgrade/visualization/BadEvents_Run2016D4.root`
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 28 - What is this event?
-]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise25show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise25hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise25toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-Cosmics -- Another cosmics event.
-:::
-:::
-
-------------------------------------------------------------------------
+> ## Question 28
+>  What is this event?
+>> ## Show/Hide
+>> Cosmics -- Another cosmics event.
+>{: .solution}
+{: .challenge}
+----------
 
 Go to event 276582:638:1144780530 of
 `/store/group/upgrade/visualization/BadEvents_Run2016D5_AOD.root`
@@ -645,62 +539,17 @@ The fwc file defines all the parameter of the Fireworks display: the
 colors, the tables and views, the collections shown, etc. You can always
 change the parameters while looking at an event and then save your
 configuration in "File→Save Configuration".
-
-![Red
-led](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/led-red.gif "Red led"){width="16"
-height="16" border="0"}[ Question 29 - Let\'s now have a look at this
-event. Can you spot any peculiar feature? ]{style="color: #ff0000"}
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Hint\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise26show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise26hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise26toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-Look at the "Muons" table.
-:::
-:::
-
-::: {.twistyPlugin .twikiMakeVisibleInline}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleopen-small.gif){border="0"}[Show
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise27show
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyInited}
-[[![](./SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise%20_%20CMS%20_%20TWiki_files/toggleclose-small.gif){border="0"}[Hide
-result\...]{.twikiLinkLabel
-.twikiUnvisited}](https://twiki.cern.ch/twiki/bin/viewauth/CMS/SWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise#)
-]{#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise27hide
-.twistyRememberSetting .twistyTrigger .twikiUnvisited .twistyHidden
-.twistyInited}
-:::
-
-::: twistyPlugin
-::: {#twistyIdCMSSWGuideCMSDataAnalysisSchoolLPC2024VisualizationExercise27toggle .twistyRememberSetting .twistyContent .twistyInited .twistyHidden}
-What balances the large MET of 1.9
-[TeV](https://twiki.cern.ch/twiki/bin/view/CMS/TeV) is the
-Jets 0, which is made by a single charged hadron track. (i.e. single
-track line + single hcal/ecal tower).\
-On the other hand, you notice that a muon (Muon_0) passes right at the
-same place.\
-This muon has an insanely large track pT error (much larger than the
-track pT itself which is already at 2
-[TeV](https://twiki.cern.ch/twiki/bin/view/CMS/TeV)),\
-and is not identified by the particle flow algorithm as a muon.\
-Instead, its inner track is associated with the fake charged hadron we
-just described above.\
-This makes up a fake event where a charged hadron balances large MET.\
-Those are reconstruction issues that happen from time to time and that
-must be filtered out in order to keep the tail of the MET spectrum
-clean.
-:::
-:::
+> ## Question 29
+>  Let\'s now have a look at this event. Can you spot any peculiar feature? \
+> *Hint* : Look at the "Muons" table.
+>> ## Show/Hide
+>> What balances the large MET of 1.9 TeV is the Jets 0, which is made by a single charged hadron track. (i.e. single
+>> track line + single hcal/ecal tower).\
+>> On the other hand, you notice that a muon (Muon_0) passes right at the same place.\
+>> This muon has an insanely large track pT error (much larger than the track pT itself which is already at 2 TeV),\
+>> and is not identified by the particle flow algorithm as a muon.\
+>> Instead, its inner track is associated with the fake charged hadron we just described above.\
+>> This makes up a fake event where a charged hadron balances large MET.\
+>>Those are reconstruction issues that happen from time to time and that must be filtered out in order to keep the tail of the MET spectrum clean.
+> {: .solution}
+{: .challenge}
