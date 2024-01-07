@@ -6,7 +6,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 > ## Prerequisites
 >
-> * Fixme
+> * You may need a CERN account to access some tools used in this exercise.
 {: .prereq}
 
 

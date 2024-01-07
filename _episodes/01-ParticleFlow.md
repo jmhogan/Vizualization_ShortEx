@@ -13,8 +13,10 @@ exercises: 30
 # - "Many kinds of plots can be produced: scatter plots, bar plots, pie charts, and many more"
 ---
 
-
+## Follow the slides!
 
 Learn a little bit about how CMS converts detector readings into muons,
 electrons, photons, and hadrons by reading the slides from the exercise
 talk here!
+
+- [PDF slides](../fig/VisualizationExercise.pdf)
